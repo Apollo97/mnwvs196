@@ -1,19 +1,41 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WvsCenter", "WvsCenter\WvsCenter.vcxproj", "{BBA52CEC-3580-4790-A833-4E646B05BB41}"
+	ProjectSection(ProjectDependencies) = postProject
+		{091C9508-86A6-4967-95B4-214AFFFE10BF} = {091C9508-86A6-4967-95B4-214AFFFE10BF}
+		{56876BF3-9F97-4676-8205-4FBC078224F2} = {56876BF3-9F97-4676-8205-4FBC078224F2}
+		{D73CB4FC-6631-4C8A-B6E7-CD125AD309F6} = {D73CB4FC-6631-4C8A-B6E7-CD125AD309F6}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WvsLogin", "WvsLogin\WvsLogin.vcxproj", "{9BA72420-3840-47E1-87DE-6C363F457C75}"
+	ProjectSection(ProjectDependencies) = postProject
+		{091C9508-86A6-4967-95B4-214AFFFE10BF} = {091C9508-86A6-4967-95B4-214AFFFE10BF}
+		{BBFC2AF9-7713-41BB-A3A7-12AE00B078AD} = {BBFC2AF9-7713-41BB-A3A7-12AE00B078AD}
+		{D73CB4FC-6631-4C8A-B6E7-CD125AD309F6} = {D73CB4FC-6631-4C8A-B6E7-CD125AD309F6}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WvsGame", "WvsGame\WvsGame.vcxproj", "{BBFC2AF9-7713-41BB-A3A7-12AE00B078AD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{091C9508-86A6-4967-95B4-214AFFFE10BF} = {091C9508-86A6-4967-95B4-214AFFFE10BF}
+		{56876BF3-9F97-4676-8205-4FBC078224F2} = {56876BF3-9F97-4676-8205-4FBC078224F2}
+		{D73CB4FC-6631-4C8A-B6E7-CD125AD309F6} = {D73CB4FC-6631-4C8A-B6E7-CD125AD309F6}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DataBase", "Database\DataBase.vcxproj", "{D73CB4FC-6631-4C8A-B6E7-CD125AD309F6}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EquationEvaluator", "EquationEvaluator\EquationEvaluator.vcxproj", "{091C9508-86A6-4967-95B4-214AFFFE10BF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D73CB4FC-6631-4C8A-B6E7-CD125AD309F6} = {D73CB4FC-6631-4C8A-B6E7-CD125AD309F6}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WvsLib", "WvsLib\WvsLib.vcxproj", "{56876BF3-9F97-4676-8205-4FBC078224F2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{091C9508-86A6-4967-95B4-214AFFFE10BF} = {091C9508-86A6-4967-95B4-214AFFFE10BF}
+		{D73CB4FC-6631-4C8A-B6E7-CD125AD309F6} = {D73CB4FC-6631-4C8A-B6E7-CD125AD309F6}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -74,5 +96,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E4E472A8-4E1E-4889-B520-DF016BA2D900}
 	EndGlobalSection
 EndGlobal

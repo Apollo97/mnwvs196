@@ -50,7 +50,7 @@ void CharacterDBAccessor::PostLoadCharacterListRequest(SocketBase *pSrv, int uLo
 void CharacterDBAccessor::PostCreateNewCharacterRequest(SocketBase *pSrv, int uLocalSocketSN, int nAccountID, int nWorldID, const std::string& strName, int nGender, int nFace, int nHair, int nSkin, const int* aBody, const int* aStat)
 {
 	GA_Character chrEntry;
-	chrEntry.nAccountID = nAccountID;
+	chrEntry.nAccountID = 0;//nAccountID;
 	chrEntry.nWorldID = nWorldID;
 	chrEntry.strName = strName;
 	chrEntry.nGender = nGender;

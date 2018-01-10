@@ -84,14 +84,14 @@ void LocalServer::OnRegisterCenterRequest(InPacket *iPacket)
 void LocalServer::OnRequestCharacterList(InPacket *iPacket)
 {
 	int nLoginSocketID = iPacket->Decode4();
-	int nAccountID = iPacket->Decode4();
+	int nAccountID = 0;//iPacket->Decode4();
 	CharacterDBAccessor::GetInstance()->PostLoadCharacterListRequest(this, nLoginSocketID, nAccountID, WvsBase::GetInstance<WvsCenter>()->GetWorldInfo().nWorldID);
 }
 
 void LocalServer::OnRequestCreateNewCharacter(InPacket *iPacket)
 {
 	int nLoginSocketID = iPacket->Decode4();
-	int nAccountID = iPacket->Decode4();
+	int nAccountID = 0;//iPacket->Decode4();
 
 	std::string strName = iPacket->DecodeStr();
 	iPacket->Decode4();

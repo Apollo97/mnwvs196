@@ -7,7 +7,7 @@ void GW_Avatar::Load(int nCharacterID)
 {
 	//BASIC AVATAR
 	Poco::Data::Statement queryStatement(GET_DB_SESSION);
-	queryStatement << "Select Hair, Face, Skin FROM CharacterStat Where CharacterID = " << nCharacterID;
+	queryStatement << "Select Hair, Face, Skin FROM CharacterAvatar Where CharacterID = " << nCharacterID;
 	queryStatement.execute();
 	Poco::Data::RecordSet recordSet(queryStatement);
 

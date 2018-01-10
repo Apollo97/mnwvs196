@@ -399,5 +399,8 @@
     <ClCompile Include="SecondaryStat.cpp">
       <Filter>WvsGame\InGame\Stat</Filter>
     </ClCompile>
+    <ClCompile Include="ItemDataPath.cpp">
+      <Filter>WvsGame\InGame\Inventory</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

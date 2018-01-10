@@ -16,5 +16,5 @@ namespace ServerConstants
 	constexpr int kGameVersion = 196;
 	constexpr int kGameLocale = (int)GameLocale::TW;
 
-	const std::string strGameSubVersion = "3";
+	const std::string strGameSubVersion = "1";
 }
